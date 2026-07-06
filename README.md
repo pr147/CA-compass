@@ -242,3 +242,11 @@ The app is **fully functional** in heuristic mode for demonstration purposes.
 | Security layers | 5 |
 | PYQ records | 30 (2016–2023) |
 | Subjects covered | 10 UPSC domains |
+
+---
+
+## Recent Updates & Bug Fixes
+
+- **PDF Parser Fix (`src/pdf_parser.py`):** Resolved the `ValueError: Document Closed` crash by caching the page count before closing the PyMuPDF document handle.
+- **Clean Repository Structure:** Moved away from tracking legacy `.zip` archives, transitioning the repository to directly track unzipped raw source code files.
+- **Enhanced `.gitignore`:** Added robust ignore rules for local virtual environments (`.venv/`), environment files, and individual database logs (`study_notebook.json`) to keep the repository clean and secure.
